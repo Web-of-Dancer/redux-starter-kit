@@ -1,0 +1,9 @@
+{
+	"info":"api data",
+	"status":200,
+	"msg":"success",
+	"data":{
+		"levelData": [],
+		"cateData": []
+	}
+}
