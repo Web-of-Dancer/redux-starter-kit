@@ -16,13 +16,21 @@ use:
     npm install  
     npm run dev  
 
+    访问 http://localhost:8080/
+
+
 目录说明：
 
 js/action 各模块的actions
+
 js/components 各模块的react组件
+
 js/constants 一些通用的常量
+
 js/devtools redux的dev工具
+
 js/reducers 各模块的reducers
+
 js/routes router配置
 
 [react]: https://github.com/facebook/react

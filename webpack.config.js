@@ -5,9 +5,9 @@ var config = {
 	entry: './js/index.js',
 
 	output: {
-		path: './js/build/',
+		path: './build/',
 		filename: 'bundle.js',
-		publicPath: '/js/build/',
+		publicPath: '/build/',
 		chunkFilename: "[id].bundle.js"
 	},
 
@@ -19,7 +19,7 @@ var config = {
 					path.resolve(__dirname, "js")
 				],
 				exclude: [
-					path.resolve(__dirname, "js/build"),
+					path.resolve(__dirname, "build"),
 					path.resolve(__dirname, "node_modules")
 				],
 				loader: 'babel-loader',
