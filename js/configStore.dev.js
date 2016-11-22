@@ -3,7 +3,7 @@ import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';
 import { routerReducer } from 'react-router-redux';
 import reducer from './reducers';
-import DevTools from './devtools';
+// import DevTools from './devtools';
 
 // 合并App和react-router的reducer
 var combinedReducers = combineReducers(Object.assign({}, {app: reducer}, {routing: routerReducer}));
@@ -16,8 +16,8 @@ function configStore (initialState) {
 			thunkMiddleware,
 			loggerMiddleware
 		),
-		DevTools.instrument()
-		// window.devToolsExtension ? window.devToolsExtension() : f => f
+		// DevTools.instrument() //网页内嵌redux调试框
+		window.devToolsExtension ? window.devToolsExtension() : f => f 	//chrome扩展redux调试工具
 		)
 	);
 	return store;

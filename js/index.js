@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { Router, hashHistory } from 'react-router';
+import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 
 import MyApp from './components/MyApp';
@@ -14,8 +14,8 @@ import hotspotRoute from './routes/hotspot';
 
 // 创建store
 var store = configStore();
-// 同步hashHistory
-var history = syncHistoryWithStore(hashHistory, store);
+// 同步browserHistory
+var history = syncHistoryWithStore(browserHistory, store);
 // router配置
 var rootRoute = {
 	path: '/',

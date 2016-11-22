@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import Header from './common/Header';
 import SideMenu from './common/sidemenu';
 
-import DevTools from '../devtools';
-
 function mapStateToProps (state, ownProps) {
 	return {
 		routepath: ownProps.location.pathname,
@@ -21,7 +19,6 @@ var MyApp = React.createClass({
 				<div className="main-section" >
 					{this.props.children}
 				</div>
-				<DevTools />
 			</div>
 		);
 	}
