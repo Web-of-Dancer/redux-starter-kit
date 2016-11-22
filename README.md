@@ -18,6 +18,8 @@ use:
 
     访问 http://localhost:8080/
 
+建议安装chrome扩展工具[react-devtools][], [redux-devtools-extension][]帮助开发调试。
+
 
 目录说明：
 
@@ -35,3 +37,5 @@ js/routes router配置
 
 [react]: https://github.com/facebook/react
 [redux]: https://github.com/reactjs/redux
+[react-devtools]:https://github.com/facebook/react-devtools
+[redux-devtools-extension]:https://github.com/zalmoxisus/redux-devtools-extension
